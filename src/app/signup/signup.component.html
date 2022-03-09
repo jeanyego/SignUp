@@ -1,0 +1,26 @@
+<div class="container">
+              <div class="card">
+                  <div style="text-align: center;">
+                      <h2>Welcome</h2>
+                      <h6>Please Sign Up to Continue</h6>
+                  </div>
+                  <form>
+                  <form [formGroup] ="signupForm" (Submit)="signUp()">
+                      <div class="form-group">
+                        <label for="emailaddress"> Enter Your Email address:</label>
+                        <input formControlName="Email" type="email" class="form-control" id="emailaddress" placeholder="jean@kyosk.app">
+                        <span class="text-danger" *ngIf="signupForm.controls['Email'].dirty && signupForm.hasError('email', 'Email')">Email is required</span>
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">Enter Password:</label>
+                        <input formControlName="Password" type="password" class="form-control" id="pwd" placeholder="********">
+                        <span class="text-danger" *ngIf="signupForm.controls['Password'].dirty && signupForm.hasError('required', 'Password')">Password is required</span>
+                      </div>
+                        <br>
+                      <button type="submit" class="btn" (click)="signUp()" [disabled]="signupForm.invalid">SignUp</button>
+                      <p class="d-flex justify-content-end">Already have an account? <a routerLink ="/login">Login</a></p>
+  
+                    </form>
+                    </form>
+              </div>
+          </div>
