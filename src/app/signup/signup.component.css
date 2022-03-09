@@ -1,7 +1,6 @@
 .card{
     border: none;
     margin: 50px;
-    width: fit-content;
     align-items: center;
     /* margin-top: 200px; */
 }
@@ -17,17 +16,4 @@
     width:100%;
     color: #ffffff; 
     background-color: #0CA789;
-}
-img{
-    width: 150px; 
-    margin-top: 100px;
-}
-.ultra{
-    color: #ffffff; 
-    margin-top: 10px;
-}
-.goals{
-    text-align: center;
-    color:#ffffff;
-    margin-top: 30px;
 }
